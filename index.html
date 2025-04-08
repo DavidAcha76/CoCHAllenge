@@ -54,22 +54,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="domain.html" class="nav-item nav-link">Domain</a>
-                        <a href="hosting.html" class="nav-item nav-link">Hosting</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="comparison.html" class="dropdown-item">Comparison</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="pages/about.html" class="nav-item nav-link">Sobre el Evento</a>
+                        <a href="pages/participacion.html" class="nav-item nav-link">Participación</a>
+                        <a href="pages/categorias.html" class="nav-item nav-link">Categorías</a>
+                        <a href="pages/cronograma.html" class="nav-item nav-link">Cronograma</a>
+                        <a href="pages/premios.html" class="nav-item nav-link">Premios</a>
+                        <a href="pages/contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="" class="btn btn-secondary py-2 px-4 ms-3">Register</a>
                 </div>
             </nav>
 
@@ -80,7 +72,7 @@
                             <h1 class="display-4 text-white mb-4 animated slideInLeft">Participa!</h1>
                             <p class="text-white animated slideInLeft">Unete a la competencia que busca solucionar problemas en cochabamba.</p>
 
-                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Inscribete</a>
+                            <a href="pages/registro.html" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Inscribete</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
@@ -112,43 +104,49 @@
 
 
         <!-- Domain Search Start -->
-        <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+        <div class="container-xxl categories mb-5" style="margin-top: 90px;">
             <div class="container px-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                            <h1 class="mb-3">Search Your Domain</h1>
-                            <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                            <h1 class="mb-3">Categorías Temáticas</h1>
+                            <p class="mb-1">Elige el área donde tu solución puede generar mayor impacto en Cochabamba. Puedes proponer proyectos en una o más categorías.</p>
                         </div>
-                        <div class="position-relative w-100 my-3 wow fadeInUp" data-wow-delay="0.3s">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your domain name">
-                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Search</button>
-                        </div>
-                        <div class="row g-3 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <h5 class="fw-bold text-primary mb-1">.com</h5>
-                                <p class="mb-0">$9.99/year</p>
+                        <div class="row g-3 wow fadeInUp" data-wow-delay="0.3s">
+                            <!-- Categoría 1 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fa fa-leaf fa-3x text-primary mb-3"></i>
+                                        <h5 class="fw-bold mb-2">Medio Ambiente</h5>
+                                        <p class="mb-0">Soluciones para sostenibilidad urbana, gestión de residuos y áreas verdes.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <h5 class="fw-bold text-primary mb-1">.net</h5>
-                                <p class="mb-0">$9.99/year</p>
+                            
+                            <!-- Categoría 2 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                                        <h5 class="fw-bold mb-2">Seguridad Ciudadana</h5>
+                                        <p class="mb-0">Tecnologías para prevención del crimen y participación vecinal.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <h5 class="fw-bold text-primary mb-1">.org</h5>
-                                <p class="mb-0">$9.99/year</p>
+                            
+                            <!-- Categoría 3 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center p-4">
+                                        <i class="fa fa-bus fa-3x text-primary mb-3"></i>
+                                        <h5 class="fw-bold mb-2">Movilidad Urbana</h5>
+                                        <p class="mb-0">Mejoras para transporte público, tráfico y accesibilidad.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <h5 class="fw-bold text-primary mb-1">.us</h5>
-                                <p class="mb-0">$9.99/year</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <h5 class="fw-bold text-primary mb-1">.eu</h5>
-                                <p class="mb-0">$9.99/year</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
-                                <h5 class="fw-bold text-primary mb-1">.co.uk</h5>
-                                <p class="mb-0">$9.99/year</p>
-                            </div>
+                            
+                            <!-- Más categorías... -->
                         </div>
                     </div>
                 </div>
@@ -156,106 +154,108 @@
         </div>
         <!-- Domain Search End -->
 
-
         <!-- About Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" id="about">
             <div class="container px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-4">
-                            <h1 class="mb-2">Welcome to GreenHost</h1>
+                            <h1 class="mb-2">¿Qué es CoCHAllenge?</h1>
                         </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="mb-4">La Hackathon CoCHAllenge es una iniciativa que busca reunir a mentes creativas para desarrollar soluciones tecnológicas y sociales que resuelvan problemas reales de Cochabamba. Durante 48 horas de trabajo intensivo, equipos multidisciplinarios competirán por crear las propuestas más innovadoras.</p>
+                        
                         <div class="row g-3">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="bg-light rounded text-center p-4">
-                                    <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                    <p class="mb-0">Experts</p>
+                                    <i class="fa fa-calendar-alt fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1">17-18</h2>
+                                    <p class="mb-0">Mayo 2024</p>
                                 </div>
                             </div>
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="bg-light rounded text-center p-4">
-                                    <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                    <p class="mb-0">Clients</p>
+                                    <i class="fa fa-map-marker-alt fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1">UNIVALLE</h2>
+                                    <p class="mb-0">Cochabamba</p>
                                 </div>
                             </div>
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="bg-light rounded text-center p-4">
-                                    <i class="fa fa-check fa-2x text-primary mb-2"></i>
-                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                    <p class="mb-0">Projects</p>
+                                    <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1">5</h2>
+                                    <p class="mb-0">Miembros por equipo</p>
                                 </div>
                             </div>
                         </div>
+                        
+                        <a href="participacion.html" class="btn btn-primary mt-4 py-2 px-4">Cómo Participar</a>
                     </div>
                     <div class="col-lg-5">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/hackathon-team.jpg" alt="Equipo trabajando en hackathon">
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
 
-
         <!-- Pricing Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" id="modalidades">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Modalidades</h1>
-                    <p class="mb-1">Participa en una de las modalidades y muestra de lo que estas hecho</p>
+                    <h1 class="mb-3">Modalidades de Participación</h1>
+                    <p class="mb-1">Elige el formato que mejor se adapte a tu proyecto y disponibilidad</p>
                 </div>
                 <div class="row gy-5 gx-4">
+                    <!-- Modalidad 1: Hackathon Clásica -->
                     <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="position-relative shadow rounded border-top border-5 border-secondary">
                             <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-secondary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
-                                <i class="fa fa-share-alt text-white"></i>
+                                <i class="fa fa-clock text-white"></i>
                             </div>
                             <div class="text-center border-bottom p-4 pt-5">
-                                <h4 class="fw-bold">Hackhaton</h4>
-                                <p class="mb-0">Eirmod erat dolor amet est clita lorem erat justo rebum elitr eos</p>
+                                <h4 class="fw-bold">Hackathon Intensiva</h4>
+                                <p class="mb-0">48 horas continuas de desarrollo (17-18 mayo)</p>
                             </div>
                             <div class="text-center border-bottom p-4">
-                                <p class="text-primary mb-1">Latest Offer - <strong>Save 30%</strong></p>
-                                <h1 class="mb-3">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>5.49<small
-                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                <p class="text-primary mb-1">Para equipos ágiles</p>
+                                <h1 class="mb-3" style="color: #6c757d;">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;"></small>Intensidad<small class="align-bottom" style="font-size: 16px; line-height: 40px;"> creativa</small>
                                 </h1>
-                                <a class="btn btn-secondary px-4 py-2" href="">Buy Now</a>
+                                <a class="btn btn-secondary px-4 py-2" href="#registro">Inscribirse</a>
                             </div>
                             <div class="p-4">
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>100 GB Disk Space</p>
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Upgrade to Positive SSL</p>
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Automatic Malware Removal</p>
-                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>30 Days Money Back Guarantee</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Trabajo presencial en UNIVALLE</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Mentoría técnica en tiempo real</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Ambiente colaborativo</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Premios inmediatos</p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Certificación oficial</p>
                             </div>
                         </div>
                     </div>
+        
+                    <!-- Modalidad 2: Modalidad Extendida -->
                     <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="position-relative shadow rounded border-top border-5 border-primary">
                             <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
-                                <i class="fa fa-cog text-white"></i>
+                                <i class="fa fa-calendar-alt text-white"></i>
                             </div>
                             <div class="text-center border-bottom p-4 pt-5">
-                                <h4 class="fw-bold">Presenta tu idea</h4>
-                                <p class="mb-0">Tendras 18 dias para desarrollar tu idea y presentarla con el jurado</p>
+                                <h4 class="fw-bold">Modalidad Extendida</h4>
+                                <p class="mb-0">18 días de desarrollo (1-18 mayo)</p>
                             </div>
                             <div class="text-center border-bottom p-4">
-                                <p class="text-primary mb-1">Latest Offer - <strong>Save 30%</strong></p>
-                                <h1 class="mb-3">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>11.49<small
-                                        class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                <p class="text-primary mb-1">Para proyectos más elaborados</p>
+                                <h1 class="mb-3" style="color: #0d6efd;">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;"></small>Profundidad<small class="align-bottom" style="font-size: 16px; line-height: 40px;"> técnica</small>
                                 </h1>
-                                <a class="btn btn-primary px-4 py-2" href="">Buy Now</a>
+                                <a class="btn btn-primary px-4 py-2" href="#registro">Inscribirse</a>
                             </div>
                             <div class="p-4">
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>100 GB Disk Space</p>
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Upgrade to Positive SSL</p>
-                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Automatic Malware Removal</p>
-                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>30 Days Money Back Guarantee</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Desarrollo remoto/presencial flexible</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Tiempo para investigación y prototipado</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Evaluación con puntaje adicional</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Posibilidad de incubación</p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Presentación ante autoridades municipales</p>
                             </div>
                         </div>
                     </div>
@@ -265,128 +265,71 @@
         <!-- Pricing End -->
 
 
-        <!-- Comparison Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Shared VS Dedicated Server</h1>
-                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos
-                        ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
-                </div>
-                <div class="row g-5 comparison position-relative">
-                    <div class="col-lg-6 pe-lg-5">
-                        <div class="section-title position-relative mx-auto mb-4 pb-4">
-                            <h3 class="fw-bold mb-0">Shared Server</h3>
-                        </div>
-                        <div class="row gy-3 gx-5">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                <i class="fa fa-server fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">99.99% Uptime</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">100% Secured</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                <i class="fa fa-cog fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">Control Panel</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <i class="fa fa-headset fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">24/7 Support</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 ps-lg-5">
-                        <div class="section-title position-relative mx-auto mb-4 pb-4">
-                            <h3 class="fw-bold mb-0">Dedicated Server</h3>
-                        </div>
-                        <div class="row gy-3 gx-5">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                <i class="fa fa-server fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">99.99% Uptime</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                <i class="fa fa-shield-alt fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">100% Secured</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                <i class="fa fa-cog fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">Control Panel</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <i class="fa fa-headset fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">24/7 Support</h5>
-                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Comparison Start -->
 
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Comparison Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" id="testimonios">
             <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4">
+                    <h1 class="mb-3">Lo que dicen de nosotros</h1>
+                    <p class="mb-1">Experiencias de participantes y organizadores en ediciones anteriores</p>
+                </div>
                 <div class="owl-carousel testimonial-carousel">
+                    <!-- Testimonio 1 -->
                     <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
                         <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
-                        <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p class="mt-3">"Participar en CoCHAllenge transformó mi visión de cómo la tecnología puede resolver problemas sociales. Nuestro proyecto de sensores de calidad del aire ahora está siendo implementado en el centro de la ciudad."</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/participante-1.jpg" style="width: 50px; height: 50px;" alt="Participante 2023">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
+                                <h6 class="fw-bold mb-1">María Fernández</h6>
+                                <small>Equipo ganador 2023 - Categoría Medio Ambiente</small>
                             </div>
                         </div>
                     </div>
+        
+                    <!-- Testimonio 2 -->
                     <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
                         <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
-                        <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p class="mt-3">"Como mentor, he visto crecer proyectos increíbles en solo 48 horas. La energía y creatividad de los participantes es inspiradora. Este año volveré a apoyar con mucho gusto."</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/mentor-1.jpg" style="width: 50px; height: 50px;" alt="Mentor">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
+                                <h6 class="fw-bold mb-1">Carlos Méndez</h6>
+                                <small>Mentor Técnico - Desarrollador Senior</small>
                             </div>
                         </div>
                     </div>
+        
+                    <!-- Testimonio 3 -->
                     <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
                         <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
-                        <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p class="mt-3">"La modalidad extendida nos permitió desarrollar un prototipo funcional de nuestra app para seguridad vecinal. Hoy tenemos un MVP que está siendo evaluado por la municipalidad."</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/participante-2.jpg" style="width: 50px; height: 50px;" alt="Participante 2022">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
+                                <h6 class="fw-bold mb-1">Juan Pérez</h6>
+                                <small>Equipo Innovación Ciudadana - Modalidad Extendida</small>
                             </div>
                         </div>
                     </div>
+        
+                    <!-- Testimonio 4 -->
                     <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 mt-4">
                         <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
-                        <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p class="mt-3">"CoCHAllenge es un ejemplo de cómo la academia, el gobierno y la sociedad civil pueden colaborar para generar soluciones innovadoras a problemas reales de nuestra ciudad."</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/autoridad-1.jpg" style="width: 50px; height: 50px;" alt="Autoridad Municipal">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
+                                <h6 class="fw-bold mb-1">Dra. Laura Gutiérrez</h6>
+                                <small>Representante Municipal - Secretaría de Innovación</small>
                             </div>
                         </div>
                     </div>
@@ -394,6 +337,7 @@
             </div>
         </div>
         <!-- Testimonial End -->
+
 
 
         <!-- Team Start -->
@@ -471,69 +415,70 @@
             <div class="container py-5 px-lg-5">
                 <div class="row gy-5 gx-4 pt-5">
                     <div class="col-12">
-                        <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
+                        <h5 class="fw-bold text-white mb-4">Suscríbete a Nuestro Newsletter</h5>
                         <div class="position-relative" style="max-width: 400px;">
-                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Ingresa tu correo">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                         </div>
                     </div>
+        
                     <div class="col-lg-5 col-md-12">
                         <div class="row gy-5 g-4">
                             <div class="col-md-6">
-                                <h5 class="fw-bold text-white mb-4">About Us</h5>
-                                <a class="btn btn-link" href="">About Us</a>
-                                <a class="btn btn-link" href="">Contact Us</a>
-                                <a class="btn btn-link" href="">Privacy Policy</a>
-                                <a class="btn btn-link" href="">Terms & Condition</a>
-                                <a class="btn btn-link" href="">Support</a>
+                                <h5 class="fw-bold text-white mb-4">Hackathon CoCHAllenge</h5>
+                                <a class="btn btn-link" href="pages/about.html">Sobre el Evento</a>
+                                <a class="btn btn-link" href="pages/participacion.html">Participación</a>
+                                <a class="btn btn-link" href="pages/categorias.html">Categorías</a>
+                                <a class="btn btn-link" href="pages/cronograma.html">Cronograma</a>
+                                <a class="btn btn-link" href="pages/contact.html">Contacto</a>
                             </div>
                             <div class="col-md-6">
-                                <h5 class="fw-bold text-white mb-4">Our Services</h5>
-                                <a class="btn btn-link" href="">Domain Register</a>
-                                <a class="btn btn-link" href="">Shared Hosting</a>
-                                <a class="btn btn-link" href="">VPS Hosting</a>
-                                <a class="btn btn-link" href="">Dedicated Hosting</a>
-                                <a class="btn btn-link" href="">Reseller Hosting</a>
+                                <h5 class="fw-bold text-white mb-4">Secciones</h5>
+                                <a class="btn btn-link" href="pages/premios.html">Premios</a>
+                                <a class="btn btn-link" href="pages/registro.html">Registro</a>
+                                <a class="btn btn-link" href="#">Reglamento</a>
+                                <a class="btn btn-link" href="#">FAQs</a>
                             </div>
                         </div>
                     </div>
+        
                     <div class="col-md-6 col-lg-3">
-                        <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <h5 class="fw-bold text-white mb-4">Contáctanos</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av. Innovación 123, Ciudad Creativa</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+51 987 654 321</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@hackathon.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+        
                     <div class="col-md-6 col-lg-4 mt-lg-n5">
                         <div class="bg-light rounded" style="padding: 30px;">
-                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
-                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
-                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
-                            <button class="btn btn-primary w-100 py-2">Send Message</button>
+                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Nombre">
+                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Correo">
+                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Mensaje"></textarea>
+                            <button class="btn btn-primary w-100 py-2">Enviar Mensaje</button>
                         </div>
                     </div>
                 </div>
             </div>
+        
             <div class="container px-lg-5">
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            &copy; <a class="border-bottom" href="#">Hackathon CoCHAllenge</a>, Todos los derechos reservados. 
+                            Diseñado por tu equipo de desarrollo.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="../index.html">Inicio</a>
+                                <a href="#">Cookies</a>
+                                <a href="#">Ayuda</a>
+                                <a href="#">FAQs</a>
                             </div>
                         </div>
                     </div>
