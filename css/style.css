@@ -29,6 +29,79 @@
     z-index: 99;
 }
 
+
+/*Mejora Responsividad*/
+
+/* Evitar desbordamientos horizontales */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.container, .row {
+    max-width: 100%;
+    overflow-x: hidden; /* Asegura que los contenedores no se desborden */
+    padding: 0 15px; /* Espaciado interno */
+}
+
+img, video, iframe {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto;
+}
+
+/* Centrar textos y evitar desplazamientos no deseados */
+.text-center {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 auto; /* Asegura que los textos estén centrados */
+    padding: 0;
+}
+
+/* Mejorar la responsividad en pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+        text-align: center; /* Centrar los enlaces */
+    }
+
+
+    .hero-header {
+        background-size: cover; /* Ajustar el fondo para que se vea correctamente */
+    }
+
+
+    .patrocinador-card {
+        max-width: 90%; /* Asegura que las tarjetas no ocupen más del 90% del ancho de la pantalla */
+        margin: 10px auto; /* Centrar las tarjetas */
+    }
+
+    .section-title {
+        padding: 0 10px; /* Reducir el espaciado interno */
+    }
+
+    .footer .btn.btn-link {
+        font-size: 14px; /* Reducir el tamaño de los enlaces en el pie de página */
+    }
+}
+
+
+/* Limitar el ancho del contenido y centrarlo */
+.section-content {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 0 15px; /* Espaciado interno para evitar que toque los bordes */
+}
+
+
+
+
+
+
+
+
 /*patrocinadores */
 
 .grayscale-hover {
@@ -40,12 +113,13 @@
     transform: scale(1.05);
 }
 
+/* Ajustar las tarjetas de patrocinadores */
 .patrocinador-card {
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    transition: 0.3s;
-    background: #ffffff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    width: 100%; /* Asegura que las tarjetas se ajusten al ancho del contenedor */
+    max-width: 300px; /* Tamaño máximo para evitar que sean demasiado grandes */
+    margin: 10px auto; /* Centrar las tarjetas */
+    padding: 15px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 .patrocinador-card:hover {
@@ -62,7 +136,7 @@
 
 .patrocinador-card:hover img {
     filter: grayscale(0%);
-}
+} 
 
 
 
@@ -216,6 +290,7 @@ h6,
 }
 
 
+
 /*** Hero Header ***/
 .hero-header {
     background:
@@ -230,7 +305,9 @@ h6,
         left 50% top 0,
         left 50% top 50%,
         center bottom -1px;
-    background-repeat: no-repeat;
+
+    background-size: contain; /* Ajustar el tamaño del fondo */
+    background-repeat: no-repeat; /* Evitar repeticiones */
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
