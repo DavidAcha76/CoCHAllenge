@@ -31,8 +31,10 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
+
 <body>
     <div class="container-xxl position-relative p-0">
+
 
          <!-- Spinner Start -->
          <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -41,6 +43,7 @@
             </div>
         </div>
         <!-- Spinner End -->
+        
 
          <!-- Navbar & Hero Start -->
          <div class="container-xxl position-relative p-0">
@@ -85,88 +88,79 @@
         <!-- Navbar & Hero End -->
 
 
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+
+        <!-- Patrocinadores Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Nuestros Patrocinadores</h1>
+                    <p class="mb-1">Empresas que hacen posible este evento</p>
                 </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Card Patrocinador 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card patrocinador-card text-center p-3">
+                            <img src="img/patro1.png" class="img-fluid mb-3" alt="Patrocinador 1">
+                            <h5 class="mb-0">Nombre Empresa 1</h5>
+                        </div>
                     </div>
+
+                    <!-- Card Patrocinador 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="card patrocinador-card text-center p-3">
+                            <img src="img/patro2.png" class="img-fluid mb-3" alt="Patrocinador 2">
+                            <h5 class="mb-0">Nombre Empresa 2</h5>
+                        </div>
+                    </div>
+
+                    <!-- Card Patrocinador 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="card patrocinador-card text-center p-3">
+                            <img src="img/patro3.png" class="img-fluid mb-3" alt="Patrocinador 3">
+                            <h5 class="mb-0">Nombre Empresa 3</h5>
+                        </div>
+                    </div>
+
+                    <!-- Card Patrocinador 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="card patrocinador-card text-center p-3">
+                            <img src="img/patro4.png" class="img-fluid mb-3" alt="Patrocinador 4">
+                            <h5 class="mb-0">Nombre Empresa 4</h5>
+                        </div>
+                    </div>
+
+                    <!-- Card Patrocinador 5 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="card patrocinador-card text-center p-3">
+                            <img src="img/patro5.png" class="img-fluid mb-3" alt="Patrocinador 5">
+                            <h5 class="mb-0">Nombre Empresa 5</h5>
+                        </div>
+                    </div>
+
+                    <!-- Card Patrocinador 6 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="card patrocinador-card text-center p-3">
+                            <img src="img/patro6.png" class="img-fluid mb-3" alt="Patrocinador 6">
+                            <h5 class="mb-0">Nombre Empresa 6</h5>
+                        </div>
+                    </div>
+
+                    <!-- Puedes seguir agregando más -->
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Full Screen Search End -->
-
-
-    <!-- Registro Start -->
-    <div class="container py-5 px-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10 col-12">
-                <h2 class="fw-bold text-center mb-4">Formulario de Inscripción</h2>
-                <p class="text-center mb-4">¡Inscríbete ahora y únete al Hackathon CoCHAllenge! Completa el siguiente formulario para registrar a tu equipo o participación individual.</p>
-
-                <!-- Formulario de Registro -->
-                <form action="registro-submit.html" method="POST">
-                    <div class="row gy-3">
-                        <!-- Información Personal -->
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre Completo</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="correo" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="correo" name="correo" required placeholder="Ingresa tu correo electrónico">
-                        </div>
-
-                        <!-- Información de Participación -->
-                        <div class="col-md-12">
-                            <label for="modalidad" class="form-label">Modalidad de Proyecto</label>
-                            <select class="form-select" id="modalidad" name="modalidad" required>
-                                <option value="software">Clásic (si deseas algo sencillo)</option>
-                                <option value="hardware-software">Modo Deep Dive (se enfoca en proyectos más elaborados)</option>
-                            </select>
-                        </div>
-                    
-                        <!-- Información del Equipo -->
-                        <div class="col-12">
-                            <label for="equipo" class="form-label">Nombre del Equipo (si aplica)</label>
-                            <input type="text" class="form-control" id="equipo" name="equipo" placeholder="Nombre de tu equipo (si aplica)">
-                        </div>
-                        <div class="col-12">
-                            <label for="miembros" class="form-label">Miembros del Equipo</label>
-                            <textarea class="form-control" id="miembros" name="miembros" rows="3" placeholder="Nombre y correo de los miembros del equipo (si aplica)"></textarea>
-                        </div>
-
-                        <!-- Aceptación de Reglas -->
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="aceptar" name="aceptar" required>
-                                <label class="form-check-label" for="aceptar">
-                                    Acepto los <a href="#" data-bs-toggle="modal" data-bs-target="#modalTerminos">Términos y Condiciones</a> y las <a href="participacion.html">Reglas del Hackathon</a>.
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Botón de Enviar -->
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-primary py-2 px-5">Enviar Registro</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Registro End -->
+        <!-- Patrocinadores End -->
 
 
 
-    <!-- Footer Start -->
+
+
+
+
+            <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5 px-lg-5">
             <div class="row gy-5 gx-4 pt-5">
@@ -252,34 +246,6 @@
 
 <!-- Tu script principal -->
 <script src="../js/main.js"></script>
-
-
-<!-- Modal Términos y Condiciones -->
-<div class="modal fade" id="modalTerminos" tabindex="-1" aria-labelledby="modalTerminosLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalTerminosLabel">Términos y Condiciones</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <p>Estos son los términos y condiciones del Hackathon CoCHAllenge:</p>
-          <ul>
-            <li>Respetar las reglas del evento.</li>
-            <li>Los proyectos deben ser originales.</li>
-            <li>Los participantes aceptan el uso de sus proyectos para difusión.</li>
-            <li>El equipo organizador se reserva el derecho de descalificación ante malas conductas.</li>
-            <!-- Puedes agregar más aquí -->
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
 </body>
 
 </html>

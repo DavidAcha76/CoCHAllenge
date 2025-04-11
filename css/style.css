@@ -29,6 +29,49 @@
     z-index: 99;
 }
 
+/*patrocinadores */
+
+.grayscale-hover {
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+.grayscale-hover:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.patrocinador-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    transition: 0.3s;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.patrocinador-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.patrocinador-card img {
+    max-height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.patrocinador-card:hover img {
+    filter: grayscale(0%);
+}
+
+
+
+
+
+/*Patrocinadores
+*/
+
+
 
 /*** Heading ***/
 h1,
