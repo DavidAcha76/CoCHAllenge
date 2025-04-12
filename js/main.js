@@ -15,13 +15,16 @@
     // Initiate the wowjs
     new WOW().init();
 
-
+    window.addEventListener('load', function () {
+        $('.navbar').addClass('sticky-top shadow-sm');
+    });
+    
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
         } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
+            $('.navbar').addClass('sticky-top shadow-sm');
         }
     });
     
@@ -40,6 +43,7 @@
                 $this.addClass(showClass);
                 $this.find($dropdownToggle).attr("aria-expanded", "true");
                 $this.find($dropdownMenu).addClass(showClass);
+                
             },
             function() {
                 const $this = $(this);
