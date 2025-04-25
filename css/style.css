@@ -5,6 +5,13 @@
     --light: #F2F2F2;
     --dark: #1D2833;
 }
+.patro-img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
 .hero-section {
     background: linear-gradient(135deg, #7EBC12 0%, #7EBC12 100%);
     padding: 80px 20px;
